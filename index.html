@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-Site</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="container-fluid navbar navbar-expand-lg navbar-light mb-5 bg-light py-2">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#shoe">Shoes</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#backpack">Backpack</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- slider section -->
+        <section class="container slider-bg">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active p-5">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-7">
+                            <h1>Mega LCD tv for Sports</h1>
+                            <p>A liquid-crystal display is a flat-panel display or other electronically modulated optical device that uses the light-modulating properties of liquid crystals combined with polarizers. Liquid crystals do not emit light directly, instead using a backlight or reflector to produce images in color or monochrome.</p>
+                            <h1>$1300</h1>
+                            <button type="button" class="btn btn-bg text-white mt-3 py-2 px-3">BUY NOW</button>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item p-5">
+                <div class="row d-flex align-items-center">
+                        <div class="col-lg-7">
+                            <h1>Best Headphone in the Market</h1>
+                            <p>Headphones are a pair of small loudspeaker drivers worn on or around the head over a user's ears. They are electroacoustic transducers, which convert an electrical signal to a corresponding sound.</p>
+                            <h1>$600</h1>
+                            <button type="button" class="btn btn-bg text-white mt-3 py-2 px-3">BUY NOW</button>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item p-5">
+                <div class="row d-flex align-items-center">
+                        <div class="col-lg-7">
+                            <h1>High Performence X-BOX</h1>
+                            <p>Xbox is a video gaming brand created and owned by Microsoft. ... The brand was first introduced in the United States in November 2001, with the launch of the original Xbox console. The original device was the first video game console offered by an American company after the Atari Jaguar stopped sales in 1996.</p>
+                            <h1>$1200</h1>
+                            <button type="button" class="btn btn-bg text-white mt-3 py-2 px-3">BUY NOW</button>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="container my-5">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="rounded p-3 border bg-info text-white d-flex justify-content-between align-items-center">
+                        <div>
+                            <h1>Watch</h1>
+                        </div>
+                        <div>
+                            <img src="images/categories/watch.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class=" rounded p-3 border bg-danger text-white d-flex justify-content-between align-items-center">
+                        <div>
+                            <h1>Bags</h1>
+                        </div>
+                        <div>
+                            <img src="images/categories/bag.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="rounded p-3 border bg-warning text-white d-flex justify-content-between align-items-center">
+                        <div>
+                            <h1>Shoes</h1>
+                        </div>
+                        <div>
+                            <img src="images/categories/shoes.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- card section -->
+        <section class="container mb-5" id="shoe">
+            <h2>Shoe's Collection</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">SPLY 350</h3>
+                            <p class="card-text">Though the meaning of 'SPLY 350' is unknown, it's speculated to be 'Supply 350' or 'Saint Pablo Loves You'. Since the sneakers' debut in 2016, the demand for the iconic silhouette has only grown.</p>
+                            <h3>$320</h3>
+                            <button class="btn btn-bg mt-2 text-white">BUY NOW >></button>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">NIKE</h3>
+                            <p class="card-text">Nike, Inc. is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear and services.</p>
+                            <h3>$300</h3>
+                            <button class="btn btn-bg mt-2 text-white">BUY NOW >></button>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-10">
+                        <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">AIRMAX</h3>
+                            <p class="card-text">Air Max shoes are identified by their midsoles incorporating flexible urethane pouches filled with pressurized gas, visible from the exterior of the shoe and intended to provide cushioning underfoot.</p>
+                            <h3>$420</h3>
+                            <button class="btn btn-bg mt-2 text-white">BUY NOW >></button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <!-- bag section -->
+        <section class="container my-5" id="backpack">
+            <h2>Bag Collection</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg">
+                    <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">OGI0</h5>
+                        <p class="card-text">Founded in 1987, OGIO is an award-winning global leader in gear bag design and manufacturing, recognized for fusing performance, sports and lifestyle in every collection.</p>
+                        <h3>$450</h3>
+                    </div>
+                    <div class="m-3">
+                        <button class="btn btn-bg p-2 text-white">BUY NOW >></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg">
+                    <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">BURTON</h5>
+                        <p class="card-text">The quality of burton backpacks in general are just outstanding.This one in particular is really great because the colour scheme goes with anything. The outside material is water resistant, not waterproof.</p>
+                        <h3>$470</h3>
+                    </div>
+                    <div class="m-3">
+                        <button class="btn btn-bg p-2 text-white">BUY NOW >></button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg">
+                    <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">PRESIDENT</h5>
+                        <p class="card-text">Founded in 1987, OGIO is an award-winning global leader in gear bag design and manufacturing, recognized for fusing performance, sports and lifestyle in every collection.</p>
+                        <h3>$550</h3>
+                    </div>
+                    <div class="m-3">
+                        <button class="btn btn-bg p-2 text-white">BUY NOW >></button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscribe section -->
+        <section id="subscribe" style="height: 300px;" class="container d-flex justify-content-center align-items-center rounded-3 slider-bg">
+            <div>
+                <h1>Let's Stay in Touch</h1>
+                <p>Get updates on sale, discounts and many more.</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's email" aria-describedby="basic-addon2">
+                    </div>
+                <button class="btn btn-bg text-white">SUBMIT</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-5 mb-3 text-center">
+        <p>@2020- All rights reserved by Rakibul Hasan - A junior web developer</p>
+    </footer>
+    
+
+
+
+    <!-- bootstrap javascript cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
